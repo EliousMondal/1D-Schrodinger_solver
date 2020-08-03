@@ -27,7 +27,7 @@ def Numerov(x,y1,y2,E):
     return ((12-10*u)*y1-u*y2)/u
 
 #generating the arrays to store the x and Psi values
-x = np.linspace(-3,3,601)
+x = np.linspace(-3,3,n)
 y = np.zeros(n)
 z = 0.000001
 y[1] = z*h
@@ -75,9 +75,10 @@ time_taken = end - start
 print(Eigenvalues)
 print('Time taken to execute the code is ',time_taken,' seconds')
 
+#Plotting the obtained wavefunction
 plt.figure(1)
 plt.title('Numerical solution of finite well')
-#Plotting the obtained wavefunction
+
 for i in Eigenvalues:
     q = Psi(i) #0.813086, 3.1956 , 6.8963
     plt.plot(x,q[1]+1)

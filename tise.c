@@ -1236,11 +1236,11 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
 /* Module declarations from 'tise' */
-static float __pyx_v_4tise_h;
+static double __pyx_v_4tise_h;
 static int __pyx_v_4tise_n;
 static int __pyx_v_4tise_pi;
-static int __pyx_f_4tise_V(float, int __pyx_skip_dispatch); /*proto*/
-static float __pyx_f_4tise_Numerov(float, float, float, float, int __pyx_skip_dispatch); /*proto*/
+static int __pyx_f_4tise_V(double, int __pyx_skip_dispatch); /*proto*/
+static double __pyx_f_4tise_Numerov(double, double, double, double, int __pyx_skip_dispatch); /*proto*/
 #define __Pyx_MODULE_NAME "tise"
 extern int __pyx_module_is_main_tise;
 int __pyx_module_is_main_tise = 0;
@@ -1352,8 +1352,8 @@ static PyObject *__pyx_n_s_y1;
 static PyObject *__pyx_n_s_y2;
 static PyObject *__pyx_n_s_z;
 static PyObject *__pyx_n_s_zeros;
-static PyObject *__pyx_pf_4tise_V(CYTHON_UNUSED PyObject *__pyx_self, float __pyx_v_x); /* proto */
-static PyObject *__pyx_pf_4tise_2Numerov(CYTHON_UNUSED PyObject *__pyx_self, float __pyx_v_x, float __pyx_v_y1, float __pyx_v_y2, float __pyx_v_E); /* proto */
+static PyObject *__pyx_pf_4tise_V(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_x); /* proto */
+static PyObject *__pyx_pf_4tise_2Numerov(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_x, double __pyx_v_y1, double __pyx_v_y2, double __pyx_v_E); /* proto */
 static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float __pyx_v_E); /* proto */
 static PyObject *__pyx_float_2_;
 static PyObject *__pyx_float_0_1;
@@ -1375,13 +1375,13 @@ static PyObject *__pyx_codeobj__3;
 /* "tise.pyx":17
  * 
  * #defining the potential
- * cpdef int V(float x):             # <<<<<<<<<<<<<<
+ * cpdef int V(double x):             # <<<<<<<<<<<<<<
  *     '''returns V as a function of x'''
  *     if x < -1 or x > 1:
  */
 
 static PyObject *__pyx_pw_4tise_1V(PyObject *__pyx_self, PyObject *__pyx_arg_x); /*proto*/
-static int __pyx_f_4tise_V(float __pyx_v_x, CYTHON_UNUSED int __pyx_skip_dispatch) {
+static int __pyx_f_4tise_V(double __pyx_v_x, CYTHON_UNUSED int __pyx_skip_dispatch) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -1389,7 +1389,7 @@ static int __pyx_f_4tise_V(float __pyx_v_x, CYTHON_UNUSED int __pyx_skip_dispatc
   __Pyx_RefNannySetupContext("V", 0);
 
   /* "tise.pyx":19
- * cpdef int V(float x):
+ * cpdef int V(double x):
  *     '''returns V as a function of x'''
  *     if x < -1 or x > 1:             # <<<<<<<<<<<<<<
  *         return 10
@@ -1417,7 +1417,7 @@ static int __pyx_f_4tise_V(float __pyx_v_x, CYTHON_UNUSED int __pyx_skip_dispatc
     goto __pyx_L0;
 
     /* "tise.pyx":19
- * cpdef int V(float x):
+ * cpdef int V(double x):
  *     '''returns V as a function of x'''
  *     if x < -1 or x > 1:             # <<<<<<<<<<<<<<
  *         return 10
@@ -1465,7 +1465,7 @@ static int __pyx_f_4tise_V(float __pyx_v_x, CYTHON_UNUSED int __pyx_skip_dispatc
   /* "tise.pyx":17
  * 
  * #defining the potential
- * cpdef int V(float x):             # <<<<<<<<<<<<<<
+ * cpdef int V(double x):             # <<<<<<<<<<<<<<
  *     '''returns V as a function of x'''
  *     if x < -1 or x > 1:
  */
@@ -1481,12 +1481,12 @@ static int __pyx_f_4tise_V(float __pyx_v_x, CYTHON_UNUSED int __pyx_skip_dispatc
 static PyObject *__pyx_pw_4tise_1V(PyObject *__pyx_self, PyObject *__pyx_arg_x); /*proto*/
 static char __pyx_doc_4tise_V[] = "returns V as a function of x";
 static PyObject *__pyx_pw_4tise_1V(PyObject *__pyx_self, PyObject *__pyx_arg_x) {
-  float __pyx_v_x;
+  double __pyx_v_x;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("V (wrapper)", 0);
   assert(__pyx_arg_x); {
-    __pyx_v_x = __pyx_PyFloat_AsFloat(__pyx_arg_x); if (unlikely((__pyx_v_x == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 17, __pyx_L3_error)
+    __pyx_v_x = __pyx_PyFloat_AsDouble(__pyx_arg_x); if (unlikely((__pyx_v_x == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 17, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -1494,14 +1494,14 @@ static PyObject *__pyx_pw_4tise_1V(PyObject *__pyx_self, PyObject *__pyx_arg_x) 
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_4tise_V(__pyx_self, ((float)__pyx_v_x));
+  __pyx_r = __pyx_pf_4tise_V(__pyx_self, ((double)__pyx_v_x));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4tise_V(CYTHON_UNUSED PyObject *__pyx_self, float __pyx_v_x) {
+static PyObject *__pyx_pf_4tise_V(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_x) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1527,31 +1527,31 @@ static PyObject *__pyx_pf_4tise_V(CYTHON_UNUSED PyObject *__pyx_self, float __py
 /* "tise.pyx":25
  * 
  * #defining the function to carry out Numerov method
- * cpdef float Numerov(float x,float y1,float y2,float E):             # <<<<<<<<<<<<<<
+ * cpdef double Numerov(double x,double y1,double y2,double E):             # <<<<<<<<<<<<<<
  *     '''returns y[i+1] value'''
- *     cdef float u = 1 - (1/6.)*(h**2)*(V(x)-E)
+ *     cdef double u = 1 - (1/6.)*(h**2)*(V(x)-E)
  */
 
 static PyObject *__pyx_pw_4tise_3Numerov(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static float __pyx_f_4tise_Numerov(float __pyx_v_x, float __pyx_v_y1, float __pyx_v_y2, float __pyx_v_E, CYTHON_UNUSED int __pyx_skip_dispatch) {
-  float __pyx_v_u;
-  float __pyx_r;
+static double __pyx_f_4tise_Numerov(double __pyx_v_x, double __pyx_v_y1, double __pyx_v_y2, double __pyx_v_E, CYTHON_UNUSED int __pyx_skip_dispatch) {
+  double __pyx_v_u;
+  double __pyx_r;
   __Pyx_RefNannyDeclarations
-  float __pyx_t_1;
+  double __pyx_t_1;
   __Pyx_RefNannySetupContext("Numerov", 0);
 
   /* "tise.pyx":27
- * cpdef float Numerov(float x,float y1,float y2,float E):
+ * cpdef double Numerov(double x,double y1,double y2,double E):
  *     '''returns y[i+1] value'''
- *     cdef float u = 1 - (1/6.)*(h**2)*(V(x)-E)             # <<<<<<<<<<<<<<
+ *     cdef double u = 1 - (1/6.)*(h**2)*(V(x)-E)             # <<<<<<<<<<<<<<
  *     return ((12-10*u)*y1-u*y2)/u
  * 
  */
-  __pyx_v_u = (1.0 - (((1.0 / 6.) * powf(__pyx_v_4tise_h, 2.0)) * (__pyx_f_4tise_V(__pyx_v_x, 0) - __pyx_v_E)));
+  __pyx_v_u = (1.0 - (((1.0 / 6.) * pow(__pyx_v_4tise_h, 2.0)) * (__pyx_f_4tise_V(__pyx_v_x, 0) - __pyx_v_E)));
 
   /* "tise.pyx":28
  *     '''returns y[i+1] value'''
- *     cdef float u = 1 - (1/6.)*(h**2)*(V(x)-E)
+ *     cdef double u = 1 - (1/6.)*(h**2)*(V(x)-E)
  *     return ((12-10*u)*y1-u*y2)/u             # <<<<<<<<<<<<<<
  * 
  * x = np.linspace(-3,3,n)
@@ -1567,9 +1567,9 @@ static float __pyx_f_4tise_Numerov(float __pyx_v_x, float __pyx_v_y1, float __py
   /* "tise.pyx":25
  * 
  * #defining the function to carry out Numerov method
- * cpdef float Numerov(float x,float y1,float y2,float E):             # <<<<<<<<<<<<<<
+ * cpdef double Numerov(double x,double y1,double y2,double E):             # <<<<<<<<<<<<<<
  *     '''returns y[i+1] value'''
- *     cdef float u = 1 - (1/6.)*(h**2)*(V(x)-E)
+ *     cdef double u = 1 - (1/6.)*(h**2)*(V(x)-E)
  */
 
   /* function exit code */
@@ -1585,10 +1585,10 @@ static float __pyx_f_4tise_Numerov(float __pyx_v_x, float __pyx_v_y1, float __py
 static PyObject *__pyx_pw_4tise_3Numerov(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static char __pyx_doc_4tise_2Numerov[] = "returns y[i+1] value";
 static PyObject *__pyx_pw_4tise_3Numerov(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  float __pyx_v_x;
-  float __pyx_v_y1;
-  float __pyx_v_y2;
-  float __pyx_v_E;
+  double __pyx_v_x;
+  double __pyx_v_y1;
+  double __pyx_v_y2;
+  double __pyx_v_E;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("Numerov (wrapper)", 0);
@@ -1645,10 +1645,10 @@ static PyObject *__pyx_pw_4tise_3Numerov(PyObject *__pyx_self, PyObject *__pyx_a
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
-    __pyx_v_x = __pyx_PyFloat_AsFloat(values[0]); if (unlikely((__pyx_v_x == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 25, __pyx_L3_error)
-    __pyx_v_y1 = __pyx_PyFloat_AsFloat(values[1]); if (unlikely((__pyx_v_y1 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 25, __pyx_L3_error)
-    __pyx_v_y2 = __pyx_PyFloat_AsFloat(values[2]); if (unlikely((__pyx_v_y2 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 25, __pyx_L3_error)
-    __pyx_v_E = __pyx_PyFloat_AsFloat(values[3]); if (unlikely((__pyx_v_E == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 25, __pyx_L3_error)
+    __pyx_v_x = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_x == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 25, __pyx_L3_error)
+    __pyx_v_y1 = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_y1 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 25, __pyx_L3_error)
+    __pyx_v_y2 = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_y2 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 25, __pyx_L3_error)
+    __pyx_v_E = __pyx_PyFloat_AsDouble(values[3]); if (unlikely((__pyx_v_E == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 25, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
@@ -1665,7 +1665,7 @@ static PyObject *__pyx_pw_4tise_3Numerov(PyObject *__pyx_self, PyObject *__pyx_a
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_4tise_2Numerov(CYTHON_UNUSED PyObject *__pyx_self, float __pyx_v_x, float __pyx_v_y1, float __pyx_v_y2, float __pyx_v_E) {
+static PyObject *__pyx_pf_4tise_2Numerov(CYTHON_UNUSED PyObject *__pyx_self, double __pyx_v_x, double __pyx_v_y1, double __pyx_v_y2, double __pyx_v_E) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1722,9 +1722,9 @@ static PyObject *__pyx_pw_4tise_5Psi(PyObject *__pyx_self, PyObject *__pyx_arg_E
 
 static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float __pyx_v_E) {
   int __pyx_v_i;
-  float __pyx_v_N_const;
-  float __pyx_v_j;
-  float __pyx_v_A;
+  double __pyx_v_N_const;
+  double __pyx_v_j;
+  double __pyx_v_A;
   PyObject *__pyx_v_m = NULL;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -1733,10 +1733,10 @@ static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float _
   int __pyx_t_3;
   PyObject *__pyx_t_4 = NULL;
   PyObject *__pyx_t_5 = NULL;
-  float __pyx_t_6;
+  double __pyx_t_6;
   long __pyx_t_7;
-  float __pyx_t_8;
-  float __pyx_t_9;
+  double __pyx_t_8;
+  double __pyx_t_9;
   Py_ssize_t __pyx_t_10;
   PyObject *(*__pyx_t_11)(PyObject *);
   PyObject *__pyx_t_12 = NULL;
@@ -1748,7 +1748,7 @@ static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float _
  *     cdef int i
  *     for i in range(2,n):             # <<<<<<<<<<<<<<
  *         y[i] = Numerov(x[i],y[i-1],y[i-2],E)
- *     cdef float N_const = 0                 #Inverse of square of Normalisation constant
+ *     cdef double N_const = 0                 #Inverse of square of Normalisation constant
  */
   __pyx_t_1 = __pyx_v_4tise_n;
   __pyx_t_2 = __pyx_t_1;
@@ -1759,15 +1759,15 @@ static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float _
  *     cdef int i
  *     for i in range(2,n):
  *         y[i] = Numerov(x[i],y[i-1],y[i-2],E)             # <<<<<<<<<<<<<<
- *     cdef float N_const = 0                 #Inverse of square of Normalisation constant
- *     cdef float j
+ *     cdef double N_const = 0                 #Inverse of square of Normalisation constant
+ *     cdef double j
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_4, __pyx_v_i, int, 1, __Pyx_PyInt_From_int, 0, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_6 = __pyx_PyFloat_AsFloat(__pyx_t_5); if (unlikely((__pyx_t_6 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_6 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_6 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_y); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -1775,7 +1775,7 @@ static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float _
     __pyx_t_4 = __Pyx_GetItemInt(__pyx_t_5, __pyx_t_7, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_8 = __pyx_PyFloat_AsFloat(__pyx_t_4); if (unlikely((__pyx_t_8 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_8 = __pyx_PyFloat_AsDouble(__pyx_t_4); if (unlikely((__pyx_t_8 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_y); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -1783,7 +1783,7 @@ static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float _
     __pyx_t_5 = __Pyx_GetItemInt(__pyx_t_4, __pyx_t_7, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_9 = __pyx_PyFloat_AsFloat(__pyx_t_5); if (unlikely((__pyx_t_9 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_9 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_9 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = PyFloat_FromDouble(__pyx_f_4tise_Numerov(__pyx_t_6, __pyx_t_8, __pyx_t_9, __pyx_v_E, 0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 38, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -1797,18 +1797,18 @@ static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float _
   /* "tise.pyx":39
  *     for i in range(2,n):
  *         y[i] = Numerov(x[i],y[i-1],y[i-2],E)
- *     cdef float N_const = 0                 #Inverse of square of Normalisation constant             # <<<<<<<<<<<<<<
- *     cdef float j
+ *     cdef double N_const = 0                 #Inverse of square of Normalisation constant             # <<<<<<<<<<<<<<
+ *     cdef double j
  *     for j in y:
  */
   __pyx_v_N_const = 0.0;
 
   /* "tise.pyx":41
- *     cdef float N_const = 0                 #Inverse of square of Normalisation constant
- *     cdef float j
+ *     cdef double N_const = 0                 #Inverse of square of Normalisation constant
+ *     cdef double j
  *     for j in y:             # <<<<<<<<<<<<<<
  *         N_const = N_const + j*j*h
- *     cdef float A = 1.0/np.sqrt(N_const)
+ *     cdef double A = 1.0/np.sqrt(N_const)
  */
   __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_y); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -1852,25 +1852,25 @@ static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float _
       }
       __Pyx_GOTREF(__pyx_t_5);
     }
-    __pyx_t_9 = __pyx_PyFloat_AsFloat(__pyx_t_5); if (unlikely((__pyx_t_9 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_9 = __pyx_PyFloat_AsDouble(__pyx_t_5); if (unlikely((__pyx_t_9 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 41, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_v_j = __pyx_t_9;
 
     /* "tise.pyx":42
- *     cdef float j
+ *     cdef double j
  *     for j in y:
  *         N_const = N_const + j*j*h             # <<<<<<<<<<<<<<
- *     cdef float A = 1.0/np.sqrt(N_const)
+ *     cdef double A = 1.0/np.sqrt(N_const)
  *     m = A*y
  */
     __pyx_v_N_const = (__pyx_v_N_const + ((__pyx_v_j * __pyx_v_j) * __pyx_v_4tise_h));
 
     /* "tise.pyx":41
- *     cdef float N_const = 0                 #Inverse of square of Normalisation constant
- *     cdef float j
+ *     cdef double N_const = 0                 #Inverse of square of Normalisation constant
+ *     cdef double j
  *     for j in y:             # <<<<<<<<<<<<<<
  *         N_const = N_const + j*j*h
- *     cdef float A = 1.0/np.sqrt(N_const)
+ *     cdef double A = 1.0/np.sqrt(N_const)
  */
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -1878,7 +1878,7 @@ static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float _
   /* "tise.pyx":43
  *     for j in y:
  *         N_const = N_const + j*j*h
- *     cdef float A = 1.0/np.sqrt(N_const)             # <<<<<<<<<<<<<<
+ *     cdef double A = 1.0/np.sqrt(N_const)             # <<<<<<<<<<<<<<
  *     m = A*y
  *     return(m[-1],m)
  */
@@ -1908,13 +1908,13 @@ static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float _
   __pyx_t_12 = __Pyx_PyFloat_DivideCObj(__pyx_float_1_0, __pyx_t_4, 1.0, 0, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_9 = __pyx_PyFloat_AsFloat(__pyx_t_12); if (unlikely((__pyx_t_9 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_9 = __pyx_PyFloat_AsDouble(__pyx_t_12); if (unlikely((__pyx_t_9 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
   __pyx_v_A = __pyx_t_9;
 
   /* "tise.pyx":44
  *         N_const = N_const + j*j*h
- *     cdef float A = 1.0/np.sqrt(N_const)
+ *     cdef double A = 1.0/np.sqrt(N_const)
  *     m = A*y             # <<<<<<<<<<<<<<
  *     return(m[-1],m)
  * 
@@ -1931,7 +1931,7 @@ static PyObject *__pyx_pf_4tise_4Psi(CYTHON_UNUSED PyObject *__pyx_self, float _
   __pyx_t_5 = 0;
 
   /* "tise.pyx":45
- *     cdef float A = 1.0/np.sqrt(N_const)
+ *     cdef double A = 1.0/np.sqrt(N_const)
  *     m = A*y
  *     return(m[-1],m)             # <<<<<<<<<<<<<<
  * 
@@ -2111,25 +2111,25 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "tise.pyx":74
- * print("Time taken = ",end-start," seconds")
+  /* "tise.pyx":75
  * 
+ * #Plotting the obtained wavefunction
  * plt.figure(1)             # <<<<<<<<<<<<<<
  * plt.title('Numerical solution of finite well')
- * #Plotting the obtained wavefunction
+ * 
  */
-  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_int_1); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_int_1); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "tise.pyx":75
- * 
+  /* "tise.pyx":76
+ * #Plotting the obtained wavefunction
  * plt.figure(1)
  * plt.title('Numerical solution of finite well')             # <<<<<<<<<<<<<<
- * #Plotting the obtained wavefunction
+ * 
  * for i in Eigenvalues:
  */
-  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_s_Numerical_solution_of_finite_wel); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(1, __pyx_kp_s_Numerical_solution_of_finite_wel); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
   __Pyx_RefNannyFinishContext();
@@ -2327,7 +2327,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_tise(PyObject *__pyx_pyinit_module
   int __pyx_t_13;
   long __pyx_t_14;
   int __pyx_t_15;
-  float __pyx_t_16;
+  double __pyx_t_16;
   __Pyx_RefNannyDeclarations
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
@@ -2495,7 +2495,7 @@ if (!__Pyx_RefNanny) {
   /* "tise.pyx":11
  * 
  * #step size for x
- * cdef float h = 0.01             # <<<<<<<<<<<<<<
+ * cdef double h = 0.01             # <<<<<<<<<<<<<<
  * 
  * #no. of x points
  */
@@ -2904,7 +2904,7 @@ if (!__Pyx_RefNanny) {
         __pyx_t_4 = __Pyx_PyNumber_Absolute(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 56, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-        __pyx_t_1 = PyFloat_FromDouble(powf(__pyx_v_4tise_h, 2.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+        __pyx_t_1 = PyFloat_FromDouble(pow(__pyx_v_4tise_h, 2.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __pyx_t_5 = PyObject_RichCompare(__pyx_t_4, __pyx_t_1, Py_GT); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 56, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3197,7 +3197,7 @@ if (!__Pyx_RefNanny) {
  * print(Eigenvalues)
  * print("Time taken = ",end-start," seconds")             # <<<<<<<<<<<<<<
  * 
- * plt.figure(1)
+ * #Plotting the obtained wavefunction
  */
   __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_end); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -3221,56 +3221,56 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_PrintOne(0, __pyx_t_1) < 0) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "tise.pyx":74
- * print("Time taken = ",end-start," seconds")
- * 
- * plt.figure(1)             # <<<<<<<<<<<<<<
- * plt.title('Numerical solution of finite well')
- * #Plotting the obtained wavefunction
- */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_figure); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 74, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
   /* "tise.pyx":75
  * 
- * plt.figure(1)
- * plt.title('Numerical solution of finite well')             # <<<<<<<<<<<<<<
  * #Plotting the obtained wavefunction
- * for i in Eigenvalues:
+ * plt.figure(1)             # <<<<<<<<<<<<<<
+ * plt.title('Numerical solution of finite well')
+ * 
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_title); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_figure); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "tise.pyx":77
- * plt.title('Numerical solution of finite well')
+  /* "tise.pyx":76
  * #Plotting the obtained wavefunction
+ * plt.figure(1)
+ * plt.title('Numerical solution of finite well')             # <<<<<<<<<<<<<<
+ * 
+ * for i in Eigenvalues:
+ */
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_title); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "tise.pyx":78
+ * plt.title('Numerical solution of finite well')
+ * 
  * for i in Eigenvalues:             # <<<<<<<<<<<<<<
- *     q = Psi(i) #0.813086, 3.1956 , 6.8963
+ *     q = Psi(i)
  *     plt.plot(x,q[1]+1)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Eigenvalues); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_Eigenvalues); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
     __pyx_t_5 = __pyx_t_1; __Pyx_INCREF(__pyx_t_5); __pyx_t_11 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_11 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 77, __pyx_L1_error)
+    __pyx_t_11 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_7 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 77, __pyx_L1_error)
+    __pyx_t_7 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 78, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   for (;;) {
@@ -3278,17 +3278,17 @@ if (!__Pyx_RefNanny) {
       if (likely(PyList_CheckExact(__pyx_t_5))) {
         if (__pyx_t_11 >= PyList_GET_SIZE(__pyx_t_5)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_11); __Pyx_INCREF(__pyx_t_1); __pyx_t_11++; if (unlikely(0 < 0)) __PYX_ERR(0, 77, __pyx_L1_error)
+        __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_11); __Pyx_INCREF(__pyx_t_1); __pyx_t_11++; if (unlikely(0 < 0)) __PYX_ERR(0, 78, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_11); __pyx_t_11++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_11); __pyx_t_11++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       } else {
         if (__pyx_t_11 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_11); __Pyx_INCREF(__pyx_t_1); __pyx_t_11++; if (unlikely(0 < 0)) __PYX_ERR(0, 77, __pyx_L1_error)
+        __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_11); __Pyx_INCREF(__pyx_t_1); __pyx_t_11++; if (unlikely(0 < 0)) __PYX_ERR(0, 78, __pyx_L1_error)
         #else
-        __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_11); __pyx_t_11++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
+        __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_11); __pyx_t_11++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         #endif
       }
@@ -3298,25 +3298,25 @@ if (!__Pyx_RefNanny) {
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 77, __pyx_L1_error)
+          else __PYX_ERR(0, 78, __pyx_L1_error)
         }
         break;
       }
       __Pyx_GOTREF(__pyx_t_1);
     }
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_i, __pyx_t_1) < 0) __PYX_ERR(0, 77, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_i, __pyx_t_1) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "tise.pyx":78
- * #Plotting the obtained wavefunction
+    /* "tise.pyx":79
+ * 
  * for i in Eigenvalues:
- *     q = Psi(i) #0.813086, 3.1956 , 6.8963             # <<<<<<<<<<<<<<
+ *     q = Psi(i)             # <<<<<<<<<<<<<<
  *     plt.plot(x,q[1]+1)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Psi); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Psi); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 78, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_2 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -3331,32 +3331,32 @@ if (!__Pyx_RefNanny) {
     __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_2, __pyx_t_8) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_8);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_q, __pyx_t_1) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_q, __pyx_t_1) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "tise.pyx":79
+    /* "tise.pyx":80
  * for i in Eigenvalues:
- *     q = Psi(i) #0.813086, 3.1956 , 6.8963
+ *     q = Psi(i)
  *     plt.plot(x,q[1]+1)             # <<<<<<<<<<<<<<
  * 
  * V = np.array([V(i)/5. for i in x])
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_plot); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 79, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_plot); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 80, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_q); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 79, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_q); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_9 = __Pyx_GetItemInt(__pyx_t_2, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 79, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_GetItemInt(__pyx_t_2, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 80, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_t_9, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 79, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyInt_AddObjC(__pyx_t_9, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __pyx_t_9 = NULL;
@@ -3374,7 +3374,7 @@ if (!__Pyx_RefNanny) {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_8)) {
       PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_t_4, __pyx_t_2};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_3, 2+__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_3, 2+__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3384,7 +3384,7 @@ if (!__Pyx_RefNanny) {
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_8)) {
       PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_t_4, __pyx_t_2};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_3, 2+__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_3, 2+__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3392,7 +3392,7 @@ if (!__Pyx_RefNanny) {
     } else
     #endif
     {
-      __pyx_t_10 = PyTuple_New(2+__pyx_t_3); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 79, __pyx_L1_error)
+      __pyx_t_10 = PyTuple_New(2+__pyx_t_3); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 80, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       if (__pyx_t_9) {
         __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_9); __pyx_t_9 = NULL;
@@ -3403,46 +3403,46 @@ if (!__Pyx_RefNanny) {
       PyTuple_SET_ITEM(__pyx_t_10, 1+__pyx_t_3, __pyx_t_2);
       __pyx_t_4 = 0;
       __pyx_t_2 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     }
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "tise.pyx":77
+    /* "tise.pyx":78
  * plt.title('Numerical solution of finite well')
- * #Plotting the obtained wavefunction
+ * 
  * for i in Eigenvalues:             # <<<<<<<<<<<<<<
- *     q = Psi(i) #0.813086, 3.1956 , 6.8963
+ *     q = Psi(i)
  *     plt.plot(x,q[1]+1)
  */
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "tise.pyx":81
+  /* "tise.pyx":82
  *     plt.plot(x,q[1]+1)
  * 
  * V = np.array([V(i)/5. for i in x])             # <<<<<<<<<<<<<<
  * plt.plot(x,V,'black')
  * plt.show()
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_x); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_x); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   if (likely(PyList_CheckExact(__pyx_t_8)) || PyTuple_CheckExact(__pyx_t_8)) {
     __pyx_t_10 = __pyx_t_8; __Pyx_INCREF(__pyx_t_10); __pyx_t_11 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_11 = -1; __pyx_t_10 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 81, __pyx_L1_error)
+    __pyx_t_11 = -1; __pyx_t_10 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 82, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_7 = Py_TYPE(__pyx_t_10)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 81, __pyx_L1_error)
+    __pyx_t_7 = Py_TYPE(__pyx_t_10)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 82, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   for (;;) {
@@ -3450,17 +3450,17 @@ if (!__Pyx_RefNanny) {
       if (likely(PyList_CheckExact(__pyx_t_10))) {
         if (__pyx_t_11 >= PyList_GET_SIZE(__pyx_t_10)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_8 = PyList_GET_ITEM(__pyx_t_10, __pyx_t_11); __Pyx_INCREF(__pyx_t_8); __pyx_t_11++; if (unlikely(0 < 0)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __pyx_t_8 = PyList_GET_ITEM(__pyx_t_10, __pyx_t_11); __Pyx_INCREF(__pyx_t_8); __pyx_t_11++; if (unlikely(0 < 0)) __PYX_ERR(0, 82, __pyx_L1_error)
         #else
-        __pyx_t_8 = PySequence_ITEM(__pyx_t_10, __pyx_t_11); __pyx_t_11++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __pyx_t_8 = PySequence_ITEM(__pyx_t_10, __pyx_t_11); __pyx_t_11++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 82, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         #endif
       } else {
         if (__pyx_t_11 >= PyTuple_GET_SIZE(__pyx_t_10)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_10, __pyx_t_11); __Pyx_INCREF(__pyx_t_8); __pyx_t_11++; if (unlikely(0 < 0)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_10, __pyx_t_11); __Pyx_INCREF(__pyx_t_8); __pyx_t_11++; if (unlikely(0 < 0)) __PYX_ERR(0, 82, __pyx_L1_error)
         #else
-        __pyx_t_8 = PySequence_ITEM(__pyx_t_10, __pyx_t_11); __pyx_t_11++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 81, __pyx_L1_error)
+        __pyx_t_8 = PySequence_ITEM(__pyx_t_10, __pyx_t_11); __pyx_t_11++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 82, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         #endif
       }
@@ -3470,47 +3470,47 @@ if (!__Pyx_RefNanny) {
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 81, __pyx_L1_error)
+          else __PYX_ERR(0, 82, __pyx_L1_error)
         }
         break;
       }
       __Pyx_GOTREF(__pyx_t_8);
     }
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_i, __pyx_t_8) < 0) __PYX_ERR(0, 81, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_i, __pyx_t_8) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 81, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_i); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 82, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_16 = __pyx_PyFloat_AsFloat(__pyx_t_8); if (unlikely((__pyx_t_16 == (float)-1) && PyErr_Occurred())) __PYX_ERR(0, 81, __pyx_L1_error)
+    __pyx_t_16 = __pyx_PyFloat_AsDouble(__pyx_t_8); if (unlikely((__pyx_t_16 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 82, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = PyFloat_FromDouble((__pyx_f_4tise_V(__pyx_t_16, 0) / 5.)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 81, __pyx_L1_error)
+    __pyx_t_8 = PyFloat_FromDouble((__pyx_f_4tise_V(__pyx_t_16, 0) / 5.)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 82, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    if (unlikely(__Pyx_ListComp_Append(__pyx_t_5, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 81, __pyx_L1_error)
+    if (unlikely(__Pyx_ListComp_Append(__pyx_t_5, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 82, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   }
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_V, __pyx_t_10) < 0) __PYX_ERR(0, 81, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_V, __pyx_t_10) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-  /* "tise.pyx":82
+  /* "tise.pyx":83
  * 
  * V = np.array([V(i)/5. for i in x])
  * plt.plot(x,V,'black')             # <<<<<<<<<<<<<<
  * plt.show()
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_plt); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_plt); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_plot); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_plot); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_x); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_x); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_V); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_V); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_GIVEREF(__pyx_t_10);
   PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_10);
@@ -3521,23 +3521,23 @@ if (!__Pyx_RefNanny) {
   PyTuple_SET_ITEM(__pyx_t_8, 2, __pyx_n_s_black);
   __pyx_t_10 = 0;
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "tise.pyx":83
+  /* "tise.pyx":84
  * V = np.array([V(i)/5. for i in x])
  * plt.plot(x,V,'black')
  * plt.show()             # <<<<<<<<<<<<<<
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_show); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_show); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
