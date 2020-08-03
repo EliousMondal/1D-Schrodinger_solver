@@ -27,7 +27,22 @@ cpdef float Numerov(float x,float y1,float y2,float E):
     cdef float u = 1 - (1/6.)*(h**2)*(V(x)-E)
     return ((12-10*u)*y1-u*y2)/u
 
-    
+x = np.linspace(-3,3,n)
+y = np.zeros(n)
+z = 0.000001
+y[1] = z*h 
+ 
+def Psi(float E):
+    cdef int i
+    for i in range(2,n):
+        y[i] = Numerov(x[i],y[i-1],y[i-2],E)
+    cdef float N_const = 0                 #Inverse of square of Normalisation constant
+    cdef float j
+    for j in y:
+        N_const = N_const + j*j*h
+    cdef float A = 1.0/np.sqrt(N_const)
+    m = A*y
+    return(m[-1],m)
 
 end = time.perf_counter()
 
