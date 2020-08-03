@@ -45,7 +45,7 @@ def Psi(E):
 
 #finding the energy values
 Eigenvalues = []
-a = np.linspace(0.1,9.9,9)
+a = np.linspace(0.1,9.9,100)
 P = np.array([Psi(i)[0] for i in a])
 for i in range(len(P)-1):
     if (P[i]<0 and P[i+1]>0) or (P[i]>0 and P[i+1]<0):
@@ -70,9 +70,9 @@ for i in range(len(P)-1):
         Eigenvalues.append(mid)
         #print(iteration)
 
-print(Eigenvalues)
 end = time.perf_counter()
 time_taken = end - start
+print(Eigenvalues)
 print('Time taken to execute the code is ',time_taken,' seconds')
 
 plt.figure(1)
